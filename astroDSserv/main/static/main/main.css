@@ -1,0 +1,82 @@
+* {
+  margin: 0 auto; padding: 0;
+  left: 0; right: 0; top: 0; bottom: 0;
+}
+
+html, body {
+    height: 100%;
+  }
+
+main {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.header {
+  height: 10%;
+  text-align: left;
+  background-color: #DAD3C3;
+  font-weight: 400;
+  color: #373737;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.30), 0 6px 6px rgba(0,0,0,0.50);
+}
+
+#logotype {
+  padding-top: 1%;
+  padding-bottom: 5%;
+  font-size: 200%;
+  font-weight: 500;
+}
+
+input,
+.btn {
+  padding-top: 7px;
+  border-radius: 4px;
+  border-color: grey;
+  /* margin: 5px 0; */
+  opacity: 0.85;
+  /* display: inline-block; */
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+ .inputs {
+  padding-top: 5%;
+}
+
+input[type=submit] {
+  color: grey;
+  height: 15px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 15px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
+    background-color: #000000;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: "grey";
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.type_info {
+  margin-top: 40px;
+  font-size: 15px;
+}

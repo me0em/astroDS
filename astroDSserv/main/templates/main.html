@@ -1,0 +1,41 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>astroDS</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}" />
+</head>
+<body>
+  <main>
+    <div class="header">
+      <div id="logotype">astroDS</logo>
+
+      <div class="inputs">
+        <form action="#" method="post">
+          {% csrf_token %}
+          <input type="text" name="u_Band" placeholder="u-Band">
+          <input type="text" name="g_Band" placeholder="g-Band">
+          <input type="text" name="r_Band" placeholder="r-Band">
+          <input type="text" name="i_Band" placeholder="i-Band">
+          <input type="text" name="z_Band" placeholder="z-Band">
+          <input type="submit" value="Calc" class="styled">
+        </form>
+      </div>
+
+      <div class="type_info">
+        {% if TYPE %}
+          The object is <i style="color: #6A0000">{{ TYPE }}</i>
+          {% if TEMPERATURE %}
+            <br>Star temperature: <i style="color: #6A0000">{{ TEMPERATURE }}</i><i>K</i>
+            <br><a href="/visualize/{{TEMPERATURE}}">Visualize the star</a>
+          {% endif %}
+        {% endif %}
+      </div>
+
+</body>
+    </div>
+  </main>
+</body>
+</html>
